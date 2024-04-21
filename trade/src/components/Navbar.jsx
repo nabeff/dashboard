@@ -13,7 +13,10 @@ import profileImage from "assets/profile.jpeg"
 import { AppBar, IconButton, InputBase, Toolbar, useTheme } from '@mui/material';
 import FlexBetween from './FlexBetween';
 
-const Navbar = () => {
+const Navbar = ({
+    isSidebarOpen,
+    setIsSidebarOpen
+}) => {
   
   const dispatch = useDispatch();
   const theme = useTheme();
@@ -29,7 +32,7 @@ const Navbar = () => {
     {/*left side */}
     <FlexBetween>
 
-        <IconButton onClick={()=> console.log('open/close sidebar')}>
+        <IconButton onClick={()=> setIsSidebarOpen(!isSidebarOpen)}>
             <MenuIcon/>
         </IconButton>
 
