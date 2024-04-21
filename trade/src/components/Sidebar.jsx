@@ -203,7 +203,7 @@ const Sidebar = ({
                                 alt="profile"
                                 src={profileImage}
                                 height="40px"
-                                width="40pmx"
+                                width="40px"
                                 borderRadius="50%"
                                 sx={{objectFit: "cover"}}
                             />
@@ -222,6 +222,7 @@ const Sidebar = ({
                                         {user.occupation}
                                       </Typography>
                                 </Box>
+                                
                                 <SettingsOutlined
                                 sx={{color: theme.palette.secondary[300], fontSize:'25px'}}
                                 />
